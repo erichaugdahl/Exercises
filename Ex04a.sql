@@ -217,7 +217,7 @@ ON E.EmployeeNumber = A.EmployeeNumber
 WHERE HoursWorked > 50
 ORDER BY LastName, FirstName, ProjectID;
 
-SELECT ProjectName, FistName, LastName, HoursWorked
+SELECT ProjectName, FirstName, LastName, HoursWorked
 FROM EMPLOYEE AS E JOIN ASSIGNMENT AS A
 ON E.EmployeeNumber = A.EmployeeNumber
 JOIN PROJECT AS P
@@ -225,8 +225,12 @@ ON A.ProjectID = P.ProjectID
 ORDER BY P.ProjectID = A.EmployeeNumber;
 
 SELECT * FROM PROJECT;
+       
+INSERT INTO PROJECT
+       (ProjectName, Department, MaxHours, StartDate)
+       VALUES ("2017 Q4 Tax Preparation", "Accounting", 175.00, "10-DEC-17");
 
-SELECT ProjectName, FistName, LastName, HoursWorked
+SELECT ProjectName, FirstName, LastName, HoursWorked
 FROM EMPLOYEE AS E JOIN ASSIGNMENT AS A
 ON E.EmployeeNumber = A.EmployeeNumber
 JOIN PROJECT AS P
