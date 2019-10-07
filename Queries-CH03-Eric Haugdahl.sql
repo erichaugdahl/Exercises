@@ -1,3 +1,5 @@
+/* Query-CH03-XY by Eric Haugdahl and Jenna Morgan */
+
 SELECT ProjectID, ProjectName, Department, MaxHours, StartDate, EndDate
 From PROJECT;
 
